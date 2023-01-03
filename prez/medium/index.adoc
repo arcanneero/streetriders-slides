@@ -1,0 +1,44 @@
+[.main-title.background]
+= Streetriders : Vous aimez jouer ? Ok ! On vous raconte comment on l'a développé...
+:source-highlighter: highlightjs
+:revealjs_theme: league
+:revealjs_progress: true
+:revealjs_slideNumber: true
+:revealjs_history: true
+:revealjs_defaultTiming: 30
+:defaultTiming: 30
+:customcss: style.css
+:includedir: partials
+:contentdir: content
+:imagesdir: ./images
+:revealjs_transition: slide
+:revealjs_backgroundTransition: fade
+
+
+[.credits]
+Nicolas Giraud (@nicgiro) +
+Sylvain Bestion (@)
+
+[NOTE.speaker]
+====
+include::{includedir}/story.adoc[tag=intro]
+====
+
+include::{contentdir}/contexte.adoc[leveloffset=+1]
+
+[.end-title.background]
+== Vous aimez jouer ? Ok ! On vous raconte comment on l'a développé...
+
+Des questions ? +
+Des remarques ?
+
+[.credits]
+Nicolas Giraud (@nicgiro) +
+Sylvain Bestion (@)
+
+[NOTE.speaker]
+====
+====
+
+include::{contentdir}/references.adoc[leveloffset=+1]
+

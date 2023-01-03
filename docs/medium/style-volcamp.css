@@ -1,0 +1,22 @@
+/**
+ * Onepoint inspired theme for reveal.js
+ */
+@import url("../themes/main/styles.css");
+@import url("../themes/main/semantic.css");
+
+/**
+ * Ajustements ici
+*/
+
+
+body:after {
+    content: ' ';
+    position: fixed;
+    bottom: 1em;
+    width: 100%;
+    height: 8%;
+    background: url(styles/volcamp.png);
+    background-size: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

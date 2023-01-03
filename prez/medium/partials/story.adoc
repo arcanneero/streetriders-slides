@@ -1,0 +1,6 @@
+= Streetriders : Vous aimez jouer ? Ok ! On vous raconte comment on l'a développé...
+:toc:
+
+// tag::intro[]
+* Salut !
+// end::intro[]

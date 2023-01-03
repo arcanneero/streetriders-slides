@@ -1,0 +1,11 @@
+[transition=fade]
+[%notitle]
+[.titre.background]
+= L'histoire
+:includedir: ../partials
+
+
+[NOTE.speaker]
+====
+todo
+====
