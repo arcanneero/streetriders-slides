@@ -1,67 +1,53 @@
-# Drogué à l’hexagone, Node JS ne m’a pas vraiment aidé à rester clean... Mais NestJS pourrait-il me sauver ?
+# Streetriders : Vous aimez jouer ? Ok ! On vous raconte comment on l'a développé...
 
 ## Abstract
 
-On dit parfois que tous les écosystèmes se valent, et qu'à partir du moment où un développeur maîtrise les concepts, il n'aura pas de soucis à les mettre en œuvre…
+Avec des collègues de tous horizons, on se retrouve autour d'un évènement pour construire un jeu de cartes collaboratif à partir d'une feuille blanche.
 
-Assez adepte du modèle hexagonale, de la clean architecture, et des concepts Domain Driven Design (DDD pour les intimes), Nicolas à poussé cette expérience pour proposer une API REST dans un contexte Javascript.
+Ca donne près de 60h de jeu cumulées sur 2 jours et des opportunités  d'usages et de business.
 
-Est-ce que c'est simple ? </br>
-Est-ce que c'est fait pour ? </br>
-Est-ce que c'est une bonne idée ?
 
-Spoiler normand: Peut-être que oui, peut être que non ... Ça dépend !
+Venez vivre l'histoire de quelques mois qui nous a menée à proposer une expérience de jeu en pleine conférence de développeurs...
+Et découvrir les bénéfices humains et techniques que ce type d'aventure peut vous apporter.
 
-Venez découvrir les étapes de cette expérimentation, les points forts et les points faibles, ainsi que ce qui peut poser problème dans l'implémentation d'un modèle hexagonale dans l'écosystème NodeJS. Mais ne vous inquiétez pas, il existe quelques outils qui peuvent nous aider....
+Tout cela pour répondre aux grandes questions de la vie :  « Qui suis-je ? - Dans quel état j'erre ? - Où cours-je ? »
 
 ## Détails
 
-### L'idée
-
-Raconter l'histoire d'un POC qui est devenu une application, avec quelques errances, des observations, des choix, et des renoncements !
-
-* A quel point l'écosystème JS permet de construire facilement une API hexagonale?
-* Est-ce que ce n'est pas aller contre des bases de cet écosystème ?
-* Comment faire pour rester au plus proche des patterns d'organisation de code ?
-* Quels outils peuvent nous aider et à quoi devons nous renoncer ?
-
 ### Plan
 
-* Introduction (5 min)
-    * Mais pourquoi s'infliger cela ?
-    * Pourquoi présenter cete démarche ?
-* Retour sur les concepts (5-10 min)
-    * Architecture hexagonale, clean et DDD
-    * Quelques contraintes supplémentaires et pour quelles raisons
-        * Le Typescript
-        * Isoler les éléments
-        * S'adresser au plus grand nombre
-        * Quelques coups de cutter dans le contrat
-    * Les points clés
-        * Injection de dépendance
-        * Inversion de contrôle
-        * Isolation des modules
-* A chaque problème, sa solution : histoire d'une construction itérative (30 mins)
-    * TypeDI, Inversify pour injecter des dépendances
-    * Capacités et limites de TS pour définir les modèles et limiter les mapping
-    * Au cœur de la gestion des modules NPM
-    * NestJS, un (vrai ?) cadre de travail !
-* Synthèses (5 mins)
-    * Outils clés et limitations
-    * Quelques points de comparaison par rapport à d'autre langages.
-    * Et si c'était à refaire ?
+Le message : Passer d'une appli de gestion à un jeu sur smartphone : mais elles sont où nos compétences ?  Nous vous racontons comment nos passions nous ont conduits dans cette folle aventure !
 
-    
+* Intro - Démo du jeu (5 mins)
+* De quoi j'ai besoin pour faire un jeu ?  (15 mins)
+    * Contraintes de l’événementiel
+    * Une idée et un peu plus
+    * Fédérer une équipe
+* Passons à la technique  (15 mins)
+    * Notre Legacy
+    * Les briques tech
+    * Les pas bonnes pratiques
+* Réalisations (15 mins)
+    * Mise en design de l'IHM
+    * Le moteur de jeu
+    * Corrections just in time
+    * Déroulé pendant l’événement
+* Conclusion - Opportunités à saisir  (5 mins)
+
+
+### Un peu plus ...
+
+On parle de ce talk :
+
+* [Une folie de plus](https://www.linkedin.com/pulse/street-riders-le-jeu-sylvain-bestion/)
+* [Trois  jours au Devoxx](https://www.linkedin.com/posts/sylvain-bestion-1515137_onepoint-devoxx-defvest-activity-6926655312267501568-nEpD/?utm_source=linkedin_share&utm_medium=member_desktop_web)
+* [After movie - Devoxx 2022](https://www.youtube.com/watch?v=d4iEWBvg0HM&t=18s)
+
 ### Resources
 
 * Les slides (45mins) :
-    * [BDX I/O 2022](./medium/index-bdxio.html#/)
-    * [NantesJs #68](./medium/index-nantesjs.html#/)
-    * [Volacamp]( ./medium/index-volcamp.html#/)
+    * [TNT 2023](./medium/index-tnt.html#/)
     * [Onepoint]( ./medium/index.html#/)
-* Captation vidéo :
-    * [Volcamp (A venir...)](https://www.youtube.com/watch...)
-    * [BDX I/O](https://youtu.be/NAhi9IsCJP4?t=3057)
 
 ### Références
 
@@ -69,3 +55,22 @@ Raconter l'histoire d'un POC qui est devenu une application, avec quelques erran
 * Nantes JS #68 (30 pers.)
 * Volcamp 2022  (100 pers.)
 * eTech Day de septembre 2022 (conférence Interne  - 20 pers.)
+
+
+### Les speakers
+
+#### Autres présentations par Sylvain
+
+* Onepoint 2021: Rex sur le développement de StreetRiders (40 pers.)
+* Onepoint 2019: Rex sur le développement de  [Balance ta carte](https://www.linkedin.com/pulse/street-riders-le-jeu-sylvain-bestion/) (60 pers.)
+* Animation d'équipe (2015-2021) : Préparation et animation d'ateliers d'idéation dans différents contextes (récurrent de 4à 20 personnes)
+
+#### Autres présentations par Nicolas
+
+* Devoxx 2022  : [CI/CD le divorce serait-il prononcé ?](https://www.youtube.com/watch?v=rZKAPyKdbXM&lc=Ugy0f99DEQhUllGYrkZ4AaABAg&ab_channel=DevoxxFR) (50 pers.)
+* BDX I/O 2019  : [Comment j'ai fini par déployer à 2h du matin une application sur AWS pour piloter des voitures électriques avec un vélo d'appartement.](https://www.bdx.io/#/schedule) (50 pers.)
+* Devfest Nantes 2019  : [Comment j'ai fini par déployer à 2h du matin une application sur AWS pour piloter des voitures électriques avec un vélo d'appartement.](https://devfest.gdgnantes.com/sessions/comment_j_ai_fini_par_deployer_a_2h_du_matin_une_application_sur_aws_pour_piloter_des_voitures_electriques_avec_un_velo_d_appartement_/) (100 pers.)
+* GDG Tours 2019  : [L'adoc : du néant à la galaxie Antora](https://www.meetup.com/fr-FR/GDG-Tours/events/259980415/) (30 pers.)
+* Breizhcamp 2019 : [L'adoc : du néant à la galaxie Antora](https://www.youtube.com/watch?v=67QMncs1wvw) (100 pers.)
+* Nantes DevOps : [L'adoc : du néant à la galaxie Antora](https://www.meetup.com/fr-FR/Nantes-DevOps/events/259469585/) (20 pers.)
+* Formation Docker (2019-2021) : Animation et préparation d'une sessions de formation de 2 jours autour des usages de Docker (8 sessions de 8 personnes)
